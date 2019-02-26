@@ -6,4 +6,4 @@ class SuperSale(Product):
         inc = 2
         if self.sellIn < 1:
             inc = 4
-        return max(0, min(50, self.price + inc))
+        self.price = max(0, min(50, self.price - inc))

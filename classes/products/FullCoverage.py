@@ -6,4 +6,4 @@ class FullCoverage(Product):
         inc = 1
         if self.sellIn < 1:
             inc = 2
-        return max(0, min(50, self.price + inc))
+        self.price = max(0, min(50, self.price + inc))
