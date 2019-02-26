@@ -7,7 +7,7 @@ class Product():
 
     def updatePrice(self):
         deg = 1
-        if (self.sellIn < 1):
+        if self.sellIn < 1:
             deg = 2
         return max(0, min(50, self.price - deg))
 
