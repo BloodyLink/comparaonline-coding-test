@@ -6,11 +6,6 @@ class CarInsurance():
     def updateValues(self):
         for product in self.products:
             product.updateValues()
-            
-    # def productPrinter(self, products):
-    #     for product in products:
-    #         with open('products_after_30_days.txt', 'a+') as file:
-    #             file.write(f'{product.name}, {product.sellIn}, {product.price}\n')
 
     def makeFile(self):
 
@@ -20,7 +15,6 @@ class CarInsurance():
                 file.write('name, sellIn, price\n')
                 for product in self.products:
                     file.write(f'{product.name}, {product.sellIn}, {product.price}\n')
-                # self.productPrinter(self.products)
                 file.write('\n')
 
         # Days 1 to 30

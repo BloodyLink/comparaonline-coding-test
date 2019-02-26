@@ -1,2 +1,4 @@
 classes/__pycache__/*
 classes/products/__pycache__/*
+__pycache__/
+.coverage
